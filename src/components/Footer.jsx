@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -26,9 +26,12 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#fff'
+                color: '#fff',
+                fontSize: '0.85rem',
+                fontWeight: 900,
+                letterSpacing: '-0.025em'
               }}>
-                <Sparkles size={20} />
+                JRB
               </div>
               <span>John Rainhard Blessy<span style={{ color: 'var(--accent)' }}>.</span></span>
             </a>

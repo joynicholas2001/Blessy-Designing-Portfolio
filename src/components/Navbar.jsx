@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sparkles, Send } from 'lucide-react';
+import { Menu, X, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const navLinks = [
@@ -68,9 +68,12 @@ const Navbar = memo(function Navbar() {
             justifyContent: 'center',
             color: '#fff',
             boxShadow: '0 4px 12px rgba(79, 70, 229, 0.3)',
-            flexShrink: 0
+            flexShrink: 0,
+            fontSize: '0.95rem',
+            fontWeight: 900,
+            letterSpacing: '-0.025em'
           }}>
-            <Sparkles size={22} />
+            JRB
           </div>
           <span>John Rainhard Blessy<span className="gradient-text">.</span></span>
         </Link>
